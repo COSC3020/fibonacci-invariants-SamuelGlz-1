@@ -31,6 +31,5 @@ your answer to this markdown file.
 
 ----
 
-As we discussed in class and how form the feedback from last semester: an appropriate fibonacci invariant is to check at the beginning of a recursive call
-if the main property of fibonacci is maintained. The main property is that the new number (n) will be equal to (n-1) + (n-2). In my code I have the base cases
-declared, so we could have the invariant check that the value at any index in the array is equal to the sum of the previous two spots in the array.
+As we discussed in class and how form the feedback from last semester: 
+In my code I have the base cases declared, and the invariant for fibonacci will garantee that for the i iteration the code will return the sum for (i-1) + (i-2). This is garanteed in my code since it will push the sum of the previous two index values. This happens before the recursion is called, garanteeing that the values of i in my array will be correct before the next iteration. 
