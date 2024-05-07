@@ -32,4 +32,4 @@ your answer to this markdown file.
 ----
 
 As we discussed in class and how form the feedback from last semester: 
-In my code I have the base cases declared, and the invariant for fibonacci will garantee that for the i iteration the code will return the sum for (i-1) + (i-2). This is garanteed in my code since it will push the sum of the previous two index values. This happens before the recursion is called, garanteeing that the values of i in my array will be correct before the next iteration. 
+The invariant for fibonacci will garantee that for the nth iteration the code will return the sum for (n-1) + (n-2), which themselves are sums of the two values before them, unless they equal the base cases of 1 or 0 in which they take the values of 1 and 0 respectively. This is garanteed in my code since it is building up the fibonacci array, this will determine the value to push, by summing up the previous two index values. This happens before the recursion is called, garanteeing that the values of i in my array will be correct before the next iteration. 
