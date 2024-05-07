@@ -1,3 +1,4 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/rzkZS2Jf)
 # Fibonacci Invariants
 
 Recall the definition of the Fibonacci series: the first number is 0, the second
@@ -27,3 +28,8 @@ about the current recursive call.
 Describe your reasoning and the conclusion you've come to. Your reasoning is the
 most important part. You do not need to prove that the invariant is correct. Add
 your answer to this markdown file.
+
+----
+
+As we discussed in class and how form the feedback from last semester: 
+The invariant for my application of fibonacci garantees that for the nth iteration the code will return the sum for (n-1) + (n-2), which themselves are sums of the two values before them, unless they equal the base cases of 1 or 0 in which they take the values of 1 and 0 respectively. This is garanteed in my code since it is building up the fibonacci array, this will determine the value to push, by summing up the previous two index values. The sum happens before the recursion is called, garanteeing that by the start of the next recursive call the invariant holds true. Keeping the integrity of the fibonacci number list.  
